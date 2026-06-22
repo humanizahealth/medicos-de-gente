@@ -14,6 +14,7 @@ Linha verificada antes desta atualização:
 - Divergência local/remoto no início da sessão: `0 0`.
 - Branch de trabalho criada: `docs/context-package-2026-06-22`.
 - PRs abertos no momento da checagem: nenhum retornado por `gh pr list --state open`.
+- PR criado: https://github.com/humanizahealth/medicos-de-gente/pull/5 (`draft`).
 
 ## Mudança em andamento
 
@@ -55,12 +56,13 @@ Para mudanças visuais ou de conteúdo público, acrescentar validação em prev
 
 ## Próximo passo
 
-1. Commitar a branch `docs/context-package-2026-06-22`.
-2. Abrir PR para `main`.
+1. Revisar o PR #5.
+2. Se o contrato estiver aprovado, marcar o PR como ready for review ou mergear conforme governança do repo.
 3. Após merge, orientar Pedro/Codex a usar `README.md`, `AGENTS.md`, `CLAUDE.md`, `MEMORY.md` e este `HANDOFF.md` como pacote canônico do repo.
 
 ## Ponteiros
 
 - Contexto institucional: Humaniza OS `08. Prompts e Handoffs/2026-06-22 - Contexto Codex Pedro - Websites Humaniza Health e Medicos de Gente.md`.
+- PR do pacote de contexto: https://github.com/humanizahealth/medicos-de-gente/pull/5
 - Site institucional relacionado: `https://humaniza.health`.
 - Conteúdo e links da landing: `src/content/site.ts`.
