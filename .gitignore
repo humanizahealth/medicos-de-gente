@@ -1,0 +1,10 @@
+node_modules/
+dist/
+output/
+screenshots/
+.DS_Store
+*.local
+.claude/
+.codex/
+.playwright-cli/
+HANDOFF.md
