@@ -1,24 +1,14 @@
-import type { ButtonHTMLAttributes, MouseEvent, ReactNode } from "react";
+import type { AnchorHTMLAttributes, ReactNode } from "react";
 
-type ExternalLinkProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "type"> & {
+type ExternalLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "rel" | "target"> & {
   children: ReactNode;
   href: string;
 };
 
-export function ExternalLink({ children, href, onClick, ...buttonProps }: ExternalLinkProps) {
-  function handleClick(event: MouseEvent<HTMLButtonElement>) {
-    onClick?.(event);
-
-    if (event.defaultPrevented) {
-      return;
-    }
-
-    window.open(href, "_blank", "noopener,noreferrer");
-  }
-
+export function ExternalLink({ children, href, ...anchorProps }: ExternalLinkProps) {
   return (
-    <button type="button" onClick={handleClick} data-external-link="true" {...buttonProps}>
+    <a href={href} target="_blank" rel="noopener noreferrer" data-external-link="true" {...anchorProps}>
       {children}
-    </button>
+    </a>
   );
 }
