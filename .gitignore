@@ -9,3 +9,4 @@ screenshots/
 .codex/
 .playwright-cli/
 HANDOFF.md
+.vercel/
